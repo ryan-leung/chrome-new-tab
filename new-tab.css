@@ -1,0 +1,198 @@
+body {
+  background: #ffffff;
+  background: radial-gradient(ellipse at center, #ffffff 0%, #eee 100%);
+  background: -moz-radial-gradient(#eee, #fff);
+}
+
+.keepcentered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1200px;
+  height: 800px;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  font-weight: 100;
+}
+
+#time{
+  font-size: 200%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  color: #ff5722; // Change this to change the color of the colored font on the page.
+  margin: 10px;
+}
+
+td, tr {
+  width: 20%;
+  text-align: center;
+  font-size: 125%;
+  padding: 15px;
+}
+
+a {
+  font-weight: 100;
+  color: #424242;
+}
+
+a:hover {
+  color: #651fff;
+}
+
+a:link {
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #000;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+#calendar {
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    height: 420px;
+    width: 350px;
+    font-size: 14px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.4);
+}
+
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.actiu {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 350px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    transition: all 0.3s ease;
+    transform: translateX(0px)top;
+}
+
+table.actiu.inactiu {
+    transition: all 0.3s 0.01s ease;
+}
+
+table.actiu.amagat-esquerra {
+    transform: translateX(-249px);
+}
+
+table.actiu.amagat-dreta {
+    transform: translateX(250px);
+}
+
+.actiu td,th {
+    text-align: center;
+    background-color: #fff;
+}
+.actiu th {
+    padding: 10px;
+}
+.actiu tr:first-child th {
+    font-size: 20px;
+    font-weight: bold;
+    border-left: none;
+    border-top: none;
+}
+.actiu td:last-child, th:last-child {
+  border-right: none;
+}
+
+.actiu th {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+    background-color: #9b59b6;
+    color: #fff;
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+    font-weight: normal;
+}
+.actiu th .any {
+    font-size: 12px;
+    font-weight: normal;
+    display: block;
+    text-shadow: none;
+    color: rgba(0,0,0,0.4);
+}
+.actiu tr:nth-child(2) th {
+    padding: 5px;
+}
+.actiu td {
+    padding: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.actiu td>span {
+    color: #555;
+    padding: 10px;
+    display: block;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.actiu td:nth-child(even)>span {
+    background-color: rgba(0,0,0,0.02);
+}
+.actiu td:last-child>span,
+.actiu td:nth-child(6)>span {
+    color: #9b59b6;
+}
+.actiu td.avui>span {
+    font-weight: bold;
+    background-color: #9b59b6;
+    color: #fff;
+    border: 2px solid rgba(0,0,0,0.1);
+}
+.actiu td.fora > span {
+    opacity: 0.2;
+}
+.actiu td > span:hover {
+    background: #a57cb6;
+    color: #fff;
+}
+.boto-next, .boto-prev {
+    background: rgba(0,0,0,0.1);
+    color: #fff;
+    font-family: inherit;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: inherit;
+    padding: 2px 10px 5px 10px;
+    line-height: 1px;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    border-radius: 100%;
+    position: absolute;
+    top: 15px;
+}
+.boto-next { right: 10px; padding-left: 13px; }
+.boto-prev { left: 10px; padding-right: 13px;}
+.boto-next:hover,
+.boto-prev:hover {
+    background: rgba(0,0,0,0.2);
+}
+button:hover { cursor: pointer; }
+button:focus { outline: none; }
+
+
